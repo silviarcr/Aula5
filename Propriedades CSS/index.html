@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site Reprograma aprendendo CSS">
+        <meta name="author" content="Silvia Coelho"=>
+        <title>Propriedades CSS</title>
+        
+        <style>
+            .caixa{
+                max-width: 100%;
+                
+            }
+            .max{
+                min-width: 600px;
+                height: 50px;
+                background-color: black;
+            }
+
+            .box{
+                border: 2px solid black;
+                border-radius: 10px;
+                box-shadow: 2px 2px 20px black; /*direita baixo blur*/
+                margin-top: 20px;
+                margin-left: 20px;
+
+            }
+            .texto{
+                text-align: justify;
+                font-weight: bold;
+                line-height: 60px;
+                color: rgb (140,0,40);
+                /*text-transform: uppercase;*/
+                font-size: 50px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #333;
+                background-color: red;
+                padding: 10px 20px;  
+                margin: 10px;
+                border-radius: 7px;
+                transition: 0.5s all;
+                display: inline-block;
+            }
+            a:hover{
+                background-color: #f3f3f3;
+                transition: 0.5s all;
+            }
+        </style>
+    </head>
+    
+    <body>
+         <div class="caixa">
+                <div class="max"></div>
+         </div>
+         <div class="box">
+         <p class="texto">Oi, sou linda! Oi, sou linda! Oi, sou linda! Oi, sou linda!
+         Oi, sou linda! Oi, sou linda! Oi, sou linda! Oi, sou linda!
+         Oi, sou linda! Oi, sou linda! Oi, sou linda! Oi, sou linda!
+         Oi, sou linda! Oi, sou linda! Oi, sou linda! Oi, sou linda!</p>
+         </div>
+         <a href"#">Link divonico</a>
+    </body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Coding Dojo">
+        <meta name="author" content="Silvia Coelho"=>
+        <title>Coding Dojo</title>
+
+        <style>
+            
+
+             h1{
+            text-align: center;  
+            text-transform: uppercase;
+            }
+
+            h2{
+            text-align: center;  
+            
+            }
+            .container{
+                 max-width: 100%;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                
+
+            }
+            .quadrado-preto{
+                width: 300px;
+                height: 300px; 
+                background-color: black;
+            }
+
+            .quadrado-amarelo{
+                width: 40px;
+                height: 40px; 
+                background-color: yellow;
+                /*position: absolute;*/
+                position: relative;
+                left: 40px;  
+            }
+            
+           .linha{
+               display: flex;
+               margin-bottom: 20px;
+               /*position: relative;*/
+           }
+           .texto{
+            max-width: 200px;
+            margin-left: 20px;
+            margin-right: 20px;
+           }
+           
+        </style>
+    </head>
+
+<!--section para delimitar, semântica, não criar div/section aleatoriamente-->
+
+    <body>
+            <h1>SOLUÇÃO</h1>
+            <section class="solucao">
+                <div class="container">
+                    
+                   <div class="linha">
+                        <div class="quadrado-preto"> <div class="quadrado-amarelo"></div> </div>
+                        <div class="texto">
+                            <h2>Título 1</h2>
+                            <p>Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo
+                            Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo </p>
+                        </div>
+                    </div>
+
+                   <div class="linha">
+                        <div class="texto">
+                            <h2>Título 1</h2>
+                            <p>Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo
+                            Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo </p>
+                        </div>
+                         <div class="quadrado-preto"> <div class="quadrado-amarelo"></div> </div>
+                    </div>
+                           
+              </div>
+          </section>
+       
+   </body>
+
+</html>

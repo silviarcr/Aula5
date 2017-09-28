@@ -1,0 +1,209 @@
+/*Geral*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*Fontes*/
+h1, h2{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.como-funciona h2{
+    font-size: 30px;
+
+}
+li{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+p, span{
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+
+
+/*Navegação - navbar*/
+.navbar{
+    position: fixed;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px 3px rgba(125,125,125,0.3);
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10; /*para dar prioridade para nav bar*/
+}
+
+.navbar-logo{
+    max-width: 150px;
+}
+
+.navbar-logo img{
+    width: 100%;        /*.navbar-logo > a > img{
+                        max-width: 150px; }*/
+}
+
+ul{
+    float: right;
+    list-style: none;
+    
+}
+
+ul li{
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+    }
+
+li >a {
+ color: #333; 
+}
+
+/*Header*/
+.intro{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover; /*imagem responsiva*/
+    color: white;
+    text-align: center;
+}
+.banner h1{
+     font-size: 40px;
+}
+.banner p{
+  font-size: 20px;
+}
+.destaque {
+  color: #E0A458;
+}
+
+/*Section como-funciona*/
+.como-funciona {
+    padding: 60px 0;
+}
+.itens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.itens p{
+   
+    text-align: justify;
+}
+
+.itens >div{
+    max-width: 250px;
+    position: relative; /*para fixar a estrela*/
+}
+.itens > div > img{
+    width: 100%;
+}
+.destaque-estrela{
+max-width: 50px;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+
+/*Section CTA*/
+.cta{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background-image: url("../img/cta.png");
+     background-size: cover;
+     color: white;
+     }
+
+.cta-conteudo{
+   
+    /*border: 1px solid  white;*/
+    border-top: 1px solid  white;
+    border-bottom: 1px solid  white;
+    padding: 20px;
+}
+.cta-form{
+ text-align: center;
+}
+
+.cta-form input[type="email"]{
+    width: 40%;
+    height: 30px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    padding-left:10px;
+    }
+.cta-form input[type="submit"]{
+    background-color: red;
+    border:0;
+    padding: 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    }
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    .navbar-menu {
+        display: none;
+    }
+    .banner h1 {
+        font-size: 20px;
+    }
+    header {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .itens{
+        flex-direction: column;
+        align-items: center;
+    }
+    .itens >div{
+    max-width: 180px;
+    }
+    .cta{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background-image: url("../img/cta.png");
+     background-size: cover;
+      }
+     .como-funciona h2{
+     font-size: 20px; 
+      }
+    .cta-conteudo h2{
+     font-size: 18px; 
+    
+    }
+    
+.cta-form{
+ width: 200px;
+ margin: 0 auto;
+ }
+  .cta-form input[type="email"]{
+    width: 100%;
+    margin-bottom: 10px;
+    }
+    .cta-form input[type="submit"]{
+     width: 100%;
+     }
+
+}
